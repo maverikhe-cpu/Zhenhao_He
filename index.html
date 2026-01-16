@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhenhao He | Counseling Psychology</title>
+    <meta name="description" content="Zhenhao He - Graduate student in Counseling Psychology at Northeastern University. Clinical experience with geriatric mental health, child & adolescent therapy, and social psychology research.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8f9fa;
+            --text-primary: #1a1a2e;
+            --text-secondary: #5a5a6e;
+            --text-muted: #8a8a9e;
+            --accent: #2d6a7a;
+            --accent-light: #e8f4f8;
+            --border: #e8e8ec;
+            --shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.08);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            line-height: 1.7;
+            color: var(--text-primary);
+            background: var(--bg-primary);
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--accent);
+            opacity: 0.75;
+        }
+
+        /* Container */
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+            z-index: 100;
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+        }
+
+        nav .name {
+            font-family: 'Source Serif 4', serif;
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--text-primary);
+        }
+
+        nav .nav-links {
+            display: flex;
+            gap: 24px;
+        }
+
+        nav .nav-links a {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+
+        nav .nav-links a:hover {
+            color: var(--accent);
+            opacity: 1;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 140px 0 80px;
+            text-align: center;
+        }
+
+        .hero-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: var(--accent-light);
+            margin: 0 auto 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Source Serif 4', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-title {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+        }
+
+        .hero-tagline {
+            font-size: 1rem;
+            color: var(--text-muted);
+            max-width: 500px;
+            margin: 0 auto 32px;
+            line-height: 1.6;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #245060;
+            color: white;
+            opacity: 1;
+        }
+
+        .btn-secondary {
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            border: 1px solid var(--border);
+        }
+
+        .btn-secondary:hover {
+            background: var(--border);
+            color: var(--text-primary);
+            opacity: 1;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 64px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        .section-alt {
+            background: var(--bg-secondary);
+        }
+
+        .section-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+
+        .section-title {
+            font-size: 1.75rem;
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
+        }
+
+        .section-content {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        /* About Section */
+        .about-bio {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+        }
+
+        /* Education Items */
+        .edu-item {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 8px 24px;
+            padding: 20px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .edu-item:last-child {
+            border-bottom: none;
+        }
+
+        .edu-school {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .edu-degree {
+            color: var(--text-secondary);
+            margin-top: 2px;
+        }
+
+        .edu-date {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            white-space: nowrap;
+        }
+
+        .edu-location {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* Experience Items */
+        .exp-item {
+            padding: 24px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .exp-item:last-child {
+            border-bottom: none;
+        }
+
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 16px;
+            margin-bottom: 4px;
+        }
+
+        .exp-title {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .exp-date {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            white-space: nowrap;
+        }
+
+        .exp-org {
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+        }
+
+        .exp-desc {
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* Research Card */
+        .research-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 28px;
+            box-shadow: var(--shadow);
+        }
+
+        .research-title {
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .research-meta {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 16px;
+        }
+
+        .research-desc {
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* Interest Tags */
+        .interests-group {
+            margin-bottom: 24px;
+        }
+
+        .interests-group:last-child {
+            margin-bottom: 0;
+        }
+
+        .interests-label {
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+        }
+
+        .interests-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 6px 14px;
+            background: var(--accent-light);
+            color: var(--accent);
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+
+        .contact-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 140px;
+            padding: 24px;
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            transition: box-shadow 0.2s ease;
+            text-align: center;
+        }
+
+        .contact-item:hover {
+            box-shadow: var(--shadow-lg);
+        }
+
+        .contact-icon {
+            font-size: 1.75rem;
+            margin-bottom: 12px;
+            line-height: 1;
+        }
+
+        .contact-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            margin-bottom: 6px;
+            min-height: 1.2em;
+        }
+
+        .contact-value {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--accent);
+            word-break: break-word;
+        }
+
+        /* Footer */
+        footer {
+            padding: 32px 0;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border);
+        }
+
+        /* Print CV (hidden by default) */
+        #cv-print-header {
+            display: none;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero-actions {
+                flex-direction: column;
+            }
+
+            .hero-actions .btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            nav .nav-links {
+                display: none;
+            }
+
+            .edu-item {
+                grid-template-columns: 1fr;
+            }
+
+            .exp-header {
+                flex-direction: column;
+            }
+
+            .contact-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* PRINT STYLESHEET - Formats as a clean CV */
+        @media print {
+            @page {
+                margin: 0.5in 0.75in;
+            }
+
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+
+            body {
+                font-size: 10pt;
+                line-height: 1.4;
+                background: white;
+            }
+
+            /* Hide navigation and hero actions */
+            nav, .hero-actions, footer {
+                display: none !important;
+            }
+
+            /* Hide About and Contact sections (info goes in header) */
+            #about, #contact {
+                display: none !important;
+            }
+
+            /* Show CV print header */
+            #cv-print-header {
+                display: block;
+                border-bottom: 2pt solid #1a1a2e;
+                padding-bottom: 12pt;
+                margin-bottom: 16pt;
+            }
+
+            #cv-print-header h1 {
+                font-size: 18pt;
+                margin-bottom: 4pt;
+            }
+
+            #cv-print-header .cv-title {
+                font-size: 10pt;
+                color: #5a5a6e;
+                margin-bottom: 8pt;
+            }
+
+            #cv-print-header .cv-contact {
+                font-size: 9pt;
+                color: #5a5a6e;
+            }
+
+            #cv-print-header .cv-contact span {
+                margin-right: 16pt;
+            }
+
+            /* Reformat hero for print */
+            .hero {
+                padding: 0 0 16pt;
+                text-align: left;
+            }
+
+            .hero-avatar, .hero-tagline, .hero-title {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 18pt;
+                text-align: left;
+                margin-bottom: 4pt;
+            }
+
+            /* Section styling for print */
+            section {
+                padding: 12pt 0 0;
+                border-bottom: none;
+                page-break-inside: avoid;
+            }
+
+            .section-alt {
+                background: white;
+            }
+
+            .section-label {
+                font-size: 8pt;
+                color: #8a8a9e;
+                margin-bottom: 4pt;
+                border-bottom: 1pt solid #e8e8ec;
+                padding-bottom: 2pt;
+            }
+
+            .section-title {
+                font-size: 12pt;
+                margin-bottom: 8pt;
+            }
+
+            /* Education for print */
+            .edu-item {
+                padding: 6pt 0;
+                grid-template-columns: 1fr auto;
+                gap: 4pt 12pt;
+            }
+
+            .edu-school {
+                font-size: 10pt;
+            }
+
+            .edu-degree {
+                font-size: 9pt;
+                margin-top: 0;
+            }
+
+            .edu-date {
+                font-size: 9pt;
+            }
+
+            /* Experience for print */
+            .exp-item {
+                padding: 8pt 0;
+            }
+
+            .exp-title {
+                font-size: 10pt;
+            }
+
+            .exp-date {
+                font-size: 9pt;
+            }
+
+            .exp-org {
+                font-size: 9pt;
+                margin-bottom: 4pt;
+            }
+
+            .exp-desc {
+                font-size: 9pt;
+                line-height: 1.5;
+            }
+
+            /* Research for print */
+            .research-card {
+                background: white;
+                border: none;
+                border-radius: 0;
+                padding: 0;
+                box-shadow: none;
+            }
+
+            .research-title {
+                font-size: 10pt;
+            }
+
+            .research-meta {
+                font-size: 9pt;
+                margin-bottom: 4pt;
+            }
+
+            .research-desc {
+                font-size: 9pt;
+            }
+
+            /* Interests for print */
+            .interests-group {
+                margin-bottom: 8pt;
+            }
+
+            .interests-label {
+                font-size: 10pt;
+                margin-bottom: 4pt;
+            }
+
+            .tag {
+                padding: 2pt 8pt;
+                background: #f0f0f0;
+                color: #1a1a2e;
+                border-radius: 0;
+                font-size: 8pt;
+            }
+
+            /* Avoid page breaks */
+            .exp-item, .edu-item, .research-card {
+                page-break-inside: avoid;
+            }
+
+            .container {
+                max-width: 100%;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <span class="name">Zhenhao He</span>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#research">Research</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CV Print Header (only visible when printing) -->
+    <div id="cv-print-header">
+        <div class="container">
+            <h1>Zhenhao He</h1>
+            <p class="cv-title">Counseling Psychology · Research · Clinical Practice</p>
+            <p class="cv-contact">
+                <span>he.zhenha@northeastern.edu</span>
+                <span>(315) 706-1065</span>
+                <span>Boston, MA</span>
+                <span>linkedin.com/in/yourprofile</span>
+            </p>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-avatar">ZH</div>
+            <h1>Zhenhao He</h1>
+            <p class="hero-title">Counseling Psychology · Research · Clinical Practice</p>
+            <p class="hero-tagline">Graduate student at Northeastern University focused on geriatric mental health, child & adolescent therapy, and social psychology research.</p>
+            <div class="hero-actions">
+                <button onclick="window.print()" class="btn btn-primary">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+                    </svg>
+                    Print CV / Save as PDF
+                </button>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <div class="container">
+            <span class="section-label">About</span>
+            <h2 class="section-title">A Bit About Me</h2>
+            <div class="about-bio">
+                <p>I am a graduate student in Counseling Psychology at Northeastern University, with clinical experience working across the lifespan—from older adults receiving behavioral health outreach to children with ADHD and ASD.</p>
+                <br>
+                <p>My research background spans social psychology and interpersonal relations, and I am passionate about accessible, culturally-responsive mental health care. Fluent in English, Mandarin, and Cantonese, I hope to bridge language and cultural barriers in therapeutic settings.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section-alt">
+        <div class="container">
+            <span class="section-label">Education</span>
+            <h2 class="section-title">Education</h2>
+            <div class="section-content">
+                <div class="edu-item">
+                    <div>
+                        <div class="edu-school">Northeastern University</div>
+                        <div class="edu-degree">Master of Science in Counseling Psychology</div>
+                    </div>
+                    <div class="edu-date">2024 – Present</div>
+                </div>
+                <div class="edu-item">
+                    <div>
+                        <div class="edu-school">Syracuse University</div>
+                        <div class="edu-degree">Bachelor of Science in Psychology (Minor in Sociology)</div>
+                    </div>
+                    <div class="edu-date">2020 – 2024</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+        <div class="container">
+            <span class="section-label">Experience</span>
+            <h2 class="section-title">Clinical Experience</h2>
+            <div class="section-content">
+                <div class="exp-item">
+                    <div class="exp-header">
+                        <div class="exp-title">Graduate Intern</div>
+                        <div class="exp-date">2025 – 2026</div>
+                    </div>
+                    <div class="exp-org">Ethos BHOAP Team · Boston, MA</div>
+                    <p class="exp-desc">Behavioral health assessments and in-home therapy for older adults (60+) receiving behavioral health outreach services. Providing client-centered interventions under licensed clinical supervision.</p>
+                </div>
+                <div class="exp-item">
+                    <div class="exp-header">
+                        <div class="exp-title">Public Health Intern</div>
+                        <div class="exp-date">Summer 2023</div>
+                    </div>
+                    <div class="exp-org">United Christian Hospital · Hong Kong</div>
+                    <p class="exp-desc">Designed and delivered health education presentations to schools and community centers, reaching underserved South Asian populations. Coordinated smoking cessation programs and assisted with preventive care initiatives.</p>
+                </div>
+                <div class="exp-item">
+                    <div class="exp-header">
+                        <div class="exp-title">Clinical Intern</div>
+                        <div class="exp-date">Summer 2023</div>
+                    </div>
+                    <div class="exp-org">Mind Potential · Hong Kong</div>
+                    <p class="exp-desc">Therapeutic support for children and adolescents diagnosed with ADHD and Autism Spectrum Disorder. Facilitated therapeutic play sessions to improve social skills and emotional regulation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research -->
+    <section id="research" class="section-alt">
+        <div class="container">
+            <span class="section-label">Research</span>
+            <h2 class="section-title">Research</h2>
+            <div class="research-card">
+                <div class="research-title">Social Psychology Research Group</div>
+                <div class="research-meta">Syracuse University · Group Leader · Fall 2022</div>
+                <p class="research-desc">Led a 4-person team investigating psychological distance and its effects on interpersonal attraction. Designed experimental methodology, coordinated data collection, and conducted statistical analysis using SPSS. Presented findings demonstrating correlation between increased psychological distance and heightened attraction.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests -->
+    <section>
+        <div class="container">
+            <span class="section-label">Interests</span>
+            <h2 class="section-title">Research & Clinical Interests</h2>
+            <div class="section-content">
+                <div class="interests-group">
+                    <div class="interests-label">Clinical</div>
+                    <div class="interests-tags">
+                        <span class="tag">Geriatric Mental Health</span>
+                        <span class="tag">ADHD/ASD in Youth</span>
+                        <span class="tag">Cross-Cultural Therapy</span>
+                        <span class="tag">Behavioral Health Outreach</span>
+                        <span class="tag">Motivational Interviewing</span>
+                    </div>
+                </div>
+                <div class="interests-group">
+                    <div class="interests-label">Research</div>
+                    <div class="interests-tags">
+                        <span class="tag">Interpersonal Relationships</span>
+                        <span class="tag">Social Psychology</span>
+                        <span class="tag">Psychological Distance</span>
+                        <span class="tag">Culturally-Responsive Interventions</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section-alt">
+        <div class="container">
+            <span class="section-label">Contact</span>
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-grid">
+                <a href="mailto:he.zhenha@northeastern.edu" class="contact-item">
+                    <div class="contact-icon">✉</div>
+                    <div class="contact-label">Email</div>
+                    <div class="contact-value">he.zhenha@northeastern.edu</div>
+                </a>
+                <a href="tel:+13157061065" class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <div class="contact-label">Phone</div>
+                    <div class="contact-value">(315) 706-1065</div>
+                </a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" class="contact-item">
+                    <div class="contact-icon">in</div>
+                    <div class="contact-label">LinkedIn</div>
+                    <div class="contact-value">Connect</div>
+                </a>
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div class="contact-label">Location</div>
+                    <div class="contact-value">Boston, MA</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            © 2025 Zhenhao He
+        </div>
+    </footer>
+
+</body>
+</html>
