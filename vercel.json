@@ -4,12 +4,12 @@
   "trailingSlash": false,
   "rewrites": [
     {
-      "source": "/HK",
-      "destination": "/HK/index.html"
+      "source": "/hk",
+      "destination": "/hk/index.html"
     },
     {
-      "source": "/HK/:path*",
-      "destination": "/HK/:path*"
+      "source": "/hk/:path*",
+      "destination": "/hk/:path*"
     }
   ]
 }
