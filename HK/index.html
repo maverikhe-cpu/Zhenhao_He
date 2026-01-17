@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhenhao He (何振豪) | Counseling Psychology - Hong Kong</title>
+    <meta name="description" content="Zhenhao He - Counseling Psychology professional seeking School Counselor or Mental Health Program Director roles in Hong Kong. Trilingual in English, Mandarin, Cantonese. Experience in geriatric mental health, ADHD/ASD youth therapy, and South Asian community service.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8f9fa;
+            --text-primary: #1a1a2e;
+            --text-secondary: #5a5a6e;
+            --text-muted: #8a8a9e;
+            --accent: #1a5f4a;
+            --accent-light: #e8f0ec;
+            --border: #e8e8ec;
+            --shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.08);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            line-height: 1.7;
+            color: var(--text-primary);
+            background: var(--bg-primary);
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--accent);
+            opacity: 0.75;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+            z-index: 100;
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+        }
+
+        nav .name {
+            font-family: 'Source Serif 4', serif;
+            font-weight: 600;
+            font-size: 1rem;
+            color: var(--text-primary);
+        }
+
+        nav .name span {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-left: 8px;
+        }
+
+        nav .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav .nav-links a {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+
+        nav .nav-links a:hover {
+            color: var(--accent);
+            opacity: 1;
+        }
+
+        nav .back-link {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 140px 0 60px;
+            text-align: center;
+        }
+
+        .hero-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .hero-avatar {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            margin: 0 auto;
+            object-fit: cover;
+            object-position: center 20%;
+            border: 4px solid var(--accent-light);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 4px;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-name-cn {
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            font-family: 'Source Serif 4', serif;
+        }
+
+        .hero-title {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+        }
+
+        .hero-tagline {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 20px;
+            line-height: 1.6;
+        }
+
+        .hero-contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px 32px;
+            justify-content: center;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 28px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border);
+        }
+
+        .hero-contact a {
+            color: var(--text-secondary);
+        }
+
+        .hero-contact span {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #134a3a;
+            color: white;
+            opacity: 1;
+        }
+
+        .btn-secondary {
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            border: 1px solid var(--border);
+        }
+
+        .btn-secondary:hover {
+            background: var(--border);
+            color: var(--text-primary);
+            opacity: 1;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 48px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        .section-alt {
+            background: var(--bg-secondary);
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .section-icon {
+            font-size: 1.25rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .section-content {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* Summary Section */
+        .summary-box {
+            background: var(--accent-light);
+            border-left: 4px solid var(--accent);
+            padding: 20px 24px;
+            border-radius: 8px;
+        }
+
+        .summary-box p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 12px;
+        }
+
+        .summary-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .summary-highlight {
+            font-weight: 500;
+            color: var(--accent);
+        }
+
+        /* Education */
+        .edu-grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        .edu-item {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 4px 16px;
+            padding: 16px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .edu-item:last-child {
+            border-bottom: none;
+        }
+
+        .edu-school {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .edu-degree {
+            color: var(--text-secondary);
+        }
+
+        .edu-details {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-top: 4px;
+        }
+
+        .edu-date {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            white-space: nowrap;
+        }
+
+        /* Experience */
+        .exp-item {
+            padding: 20px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .exp-item:last-child {
+            border-bottom: none;
+        }
+
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 16px;
+            margin-bottom: 4px;
+            flex-wrap: wrap;
+        }
+
+        .exp-title {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .exp-date {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            white-space: nowrap;
+        }
+
+        .exp-org {
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+        }
+
+        .exp-org span {
+            color: var(--text-muted);
+        }
+
+        .exp-desc {
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        .exp-desc li {
+            margin-bottom: 6px;
+        }
+
+        .exp-desc ul {
+            padding-left: 18px;
+        }
+
+        .exp-achievement {
+            background: var(--accent-light);
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+
+        /* Skills */
+        .skills-section {
+            display: grid;
+            gap: 24px;
+        }
+
+        .skill-group h4 {
+            font-size: 1rem;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 6px 14px;
+            background: var(--accent-light);
+            color: var(--accent);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .tag-secondary {
+            background: var(--bg-secondary);
+            color: var(--text-secondary);
+        }
+
+        /* Languages */
+        .lang-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+
+        .lang-item {
+            text-align: center;
+            padding: 16px;
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+        }
+
+        .lang-name {
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        .lang-level {
+            font-size: 0.85rem;
+            color: var(--accent);
+        }
+
+        .lang-note {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        /* Research */
+        .research-item {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .research-title {
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        .research-meta {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-bottom: 12px;
+        }
+
+        /* Certificates */
+        .cert-list {
+            display: grid;
+            gap: 12px;
+        }
+
+        .cert-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 16px;
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+        }
+
+        .cert-status {
+            font-size: 0.7rem;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-weight: 600;
+        }
+
+        .cert-status.progress {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .cert-status.done {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        /* Footer */
+        footer {
+            padding: 32px 0;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border);
+        }
+
+        /* Print CV Header */
+        #cv-print-header {
+            display: none;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero-actions {
+                flex-direction: column;
+            }
+
+            .hero-actions .btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            nav .nav-links {
+                display: none;
+            }
+
+            .edu-item {
+                grid-template-columns: 1fr;
+            }
+
+            .exp-header {
+                flex-direction: column;
+            }
+
+            .lang-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-contact {
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+
+        /* PRINT STYLESHEET */
+        @media print {
+            @page {
+                margin: 0.5in 0.75in;
+            }
+
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+
+            body {
+                font-size: 10pt;
+                line-height: 1.4;
+                background: white;
+            }
+
+            nav, .hero-actions, footer, .back-link {
+                display: none !important;
+            }
+
+            #cv-print-header {
+                display: block;
+                border-bottom: 2pt solid #1a5f4a;
+                padding-bottom: 10pt;
+                margin-bottom: 12pt;
+            }
+
+            #cv-print-header h1 {
+                font-size: 16pt;
+                margin-bottom: 2pt;
+            }
+
+            #cv-print-header .cv-contact {
+                font-size: 9pt;
+                color: #5a5a6e;
+            }
+
+            #cv-print-header .cv-contact span {
+                margin-right: 12pt;
+            }
+
+            .hero {
+                padding: 0 0 12pt;
+                text-align: left;
+            }
+
+            .hero-avatar, .hero-name-cn, .hero-tagline, .hero-title, .hero-contact {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 16pt;
+                text-align: left;
+            }
+
+            section {
+                padding: 10pt 0 0;
+                border-bottom: none;
+                page-break-inside: avoid;
+            }
+
+            .section-alt {
+                background: white;
+            }
+
+            .section-header {
+                margin-bottom: 6pt;
+            }
+
+            .section-icon {
+                display: none;
+            }
+
+            .section-title {
+                font-size: 11pt;
+                margin-bottom: 6pt;
+                border-bottom: 1pt solid #e8e8ec;
+                padding-bottom: 2pt;
+            }
+
+            .summary-box {
+                background: white;
+                border-left: 2pt solid #1a5f4a;
+                padding: 8pt 0;
+            }
+
+            .edu-item {
+                padding: 4pt 0;
+                grid-template-columns: 1fr auto;
+                gap: 2pt 8pt;
+            }
+
+            .edu-school {
+                font-size: 10pt;
+            }
+
+            .edu-degree {
+                font-size: 9pt;
+            }
+
+            .exp-item {
+                padding: 6pt 0;
+            }
+
+            .exp-title {
+                font-size: 10pt;
+            }
+
+            .exp-date {
+                font-size: 9pt;
+            }
+
+            .exp-org {
+                font-size: 9pt;
+                margin-bottom: 4pt;
+            }
+
+            .exp-desc {
+                font-size: 9pt;
+                line-height: 1.4;
+            }
+
+            .exp-achievement {
+                background: white;
+                padding: 0;
+                margin-top: 4pt;
+            }
+
+            .skill-group h4 {
+                font-size: 10pt;
+                margin-bottom: 4pt;
+            }
+
+            .tag {
+                padding: 2pt 6pt;
+                background: #f0f0f0;
+                color: #1a1a2e;
+                border-radius: 0;
+                font-size: 8pt;
+            }
+
+            .lang-item {
+                border: none;
+                padding: 4pt;
+            }
+
+            .research-item {
+                background: white;
+                border: none;
+                padding: 0;
+            }
+
+            .exp-item, .edu-item, .research-item {
+                page-break-inside: avoid;
+            }
+
+            .container {
+                max-width: 100%;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <span class="name">Zhenhao He <span>→ Hong Kong Applications</span></span>
+            <div class="nav-links">
+                <a href="#summary">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="mailto:ethan.he@gmail.com" class="btn-primary" style="padding: 8px 16px; font-size: 0.85rem;">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CV Print Header -->
+    <div id="cv-print-header">
+        <div class="container">
+            <h1>Zhenhao He (何振豪)</h1>
+            <p class="cv-contact">
+                <span>ethan.he@gmail.com</span>
+                <span>+852 6822 1557</span>
+                <span>Boston, MA → Relocating to Hong Kong</span>
+            </p>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-header">
+                <img src="../profile-photo.png" alt="Zhenhao He" class="hero-avatar">
+                <h1>Zhenhao He</h1>
+                <p class="hero-name-cn">何振豪</p>
+                <p class="hero-title">M.A. Candidate, Counseling Psychology | School Counselor / Mental Health Professional</p>
+            </div>
+
+            <div class="hero-contact">
+                <span><a href="mailto:ethan.he@gmail.com">✉ ethan.he@gmail.com</a></span>
+                <span><a href="tel:+85268221557">📞 +852 6822 1557</a></span>
+                <span>📍 Boston, MA → Relocating to Hong Kong</span>
+                <span><a href="https://linkedin.com/in/zhenhaohe" target="_blank">🔗 LinkedIn</a></span>
+            </div>
+
+            <p class="hero-tagline">
+                Trilingual counseling professional (English / Mandarin / Cantonese) with clinical experience across the lifespan.
+                Specialized in geriatric behavioral health outreach, child & adolescent therapy, and South Asian community service.
+            </p>
+
+            <div class="hero-actions">
+                <button onclick="window.print()" class="btn btn-primary">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+                    </svg>
+                    Download CV / Print
+                </button>
+                <a href="mailto:ethan.he@gmail.com?subject=Inquiry%20from%20Portfolio&body=Dear%20Zhenhao%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20discuss..." class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Summary -->
+    <section class="section-alt" id="summary">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-icon">👋</span>
+                <h2 class="section-title">Professional Summary</h2>
+            </div>
+            <div class="summary-box">
+                <p>
+                    <strong>M.A. Candidate in Counseling Psychology</strong> with clinical experience spanning geriatric behavioral health outreach to child & adolescent therapy. As a <span class="summary-highlight">Hong Kong international school alumnus (KGV)</span>, I bring deep understanding of local educational culture combined with evidence-based training from U.S. institutions.
+                </p>
+                <p>
+                    My unique value proposition includes <span class="summary-highlight">trilingual fluency (English/Mandarin/Cantonese)</span>, rare <span class="summary-highlight">South Asian community service experience</span>, and direct transferable skills in behavioral health outreach—aligning perfectly with Hong Kong's growing demand for culturally-responsive mental health services in schools and NGOs.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-icon">🎓</span>
+                <h2 class="section-title">Education</h2>
+            </div>
+            <div class="edu-grid">
+                <div class="edu-item">
+                    <div>
+                        <div class="edu-school">Northeastern University</div>
+                        <div class="edu-degree">Master of Science in Counseling Psychology</div>
+                        <div class="edu-details">Relevant: SEL, Trauma-Informed Practice, Crisis Intervention, Multicultural Counseling</div>
+                    </div>
+                    <div class="edu-date">Aug 2024 – Present</div>
+                </div>
+                <div class="edu-item">
+                    <div>
+                        <div class="edu-school">Syracuse University</div>
+                        <div class="edu-degree">Bachelor of Science in Psychology (Minor in Sociology)</div>
+                        <div class="edu-details">Dean's List · Social Psychology Research Group Leader</div>
+                    </div>
+                    <div class="edu-date">Aug 2020 – May 2024</div>
+                </div>
+                <div class="edu-item">
+                    <div>
+                        <div class="edu-school">King George V High School (Hong Kong)</div>
+                        <div class="edu-degree">High School Diploma</div>
+                        <div class="edu-details">International School Alumnus</div>
+                    </div>
+                    <div class="edu-date">Graduated May 2020</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section-alt" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-icon">💼</span>
+                <h2 class="section-title">Clinical Experience</h2>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-header">
+                    <div class="exp-title">Graduate Intern (Behavioral Health Outreach)</div>
+                    <div class="exp-date">Aug 2025 – May 2026</div>
+                </div>
+                <div class="exp-org">Ethos BHOAP Team <span>Boston, MA</span></div>
+                <ul class="exp-desc">
+                    <li>Conduct comprehensive <strong>biopsychosocial assessments</strong> and develop individualized care plans for older adults (60+) receiving behavioral health outreach services</li>
+                    <li>Provide evidence-based therapeutic interventions through in-home visits under licensed clinical supervision: <strong>supportive counseling, motivational interviewing, and crisis intervention</strong></li>
+                    <li>Prioritize trust-building and client-centered engagement with emphasis on <strong>cultural responsiveness</strong> for Chinese-speaking clients</li>
+                    <li>Collaborate with multidisciplinary team (social workers, nurses, OT) to ensure holistic care coordination</li>
+                </ul>
+                <div class="exp-achievement"><strong>Key Achievement:</strong> Maintained 95% client engagement rate through culturally-sensitive approaches</div>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-header">
+                    <div class="exp-title">Public Health Intern</div>
+                    <div class="exp-date">May – July 2023</div>
+                </div>
+                <div class="exp-org">United Christian Hospital <span>Hong Kong</span></div>
+                <ul class="exp-desc">
+                    <li>Designed and delivered health education presentations to schools and community centers, reaching underserved <strong>South Asian populations</strong> in Hong Kong</li>
+                    <li>Coordinated smoking cessation program using <strong>motivational interviewing</strong> techniques; helped clients reduce tobacco use through behavioral modification strategies</li>
+                    <li>Assisted multidisciplinary team in health screenings and preventive care initiatives; gained exposure to Hong Kong's public healthcare system</li>
+                    <li>Developed culturally-tailored health materials for South Asian communities, demonstrating <strong>cross-cultural communication skills</strong></li>
+                </ul>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-header">
+                    <div class="exp-title">Clinical Intern</div>
+                    <div class="exp-date">July – Aug 2023</div>
+                </div>
+                <div class="exp-org">Mind Potential <span>Hong Kong</span></div>
+                <ul class="exp-desc">
+                    <li>Provided direct behavioral support to children and adolescents diagnosed with <strong>ADHD and Autism Spectrum Disorder (ASD)</strong></li>
+                    <li>Facilitated therapeutic play sessions to improve social skills, emotional regulation, and peer interaction in group settings</li>
+                    <li>Collaborated with clinical supervisors to implement <strong>behavior intervention plans (BIP)</strong> and track client progress using data-driven approaches</li>
+                    <li>Supported IEP (Individualized Education Program) goals through structured therapeutic activities</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-icon">🔬</span>
+                <h2 class="section-title">Research Experience</h2>
+            </div>
+            <div class="research-item">
+                <div class="research-title">Social Psychology Research Group Leader</div>
+                <div class="research-meta">Syracuse University | Nov – Dec 2022</div>
+                <p class="exp-desc" style="margin-bottom: 8px;">
+                    Led a 4-person team investigating psychological distance and its effects on interpersonal attraction. Designed experimental methodology, coordinated data collection from N=50+ participants, and conducted statistical analysis using SPSS and JASP.
+                </p>
+                <div class="exp-achievement"><strong>Key Achievement:</strong> Presented findings demonstrating correlation between increased psychological distance and heightened attraction</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section-alt" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-icon">🛠</span>
+                <h2 class="section-title">Skills & Competencies</h2>
+            </div>
+            <div class="skills-section">
+                <div class="skill-group">
+                    <h4>Clinical Skills</h4>
+                    <div class="skill-tags">
+                        <span class="tag">Biopsychosocial Assessment</span>
+                        <span class="tag">Crisis Intervention</span>
+                        <span class="tag">Individual Counseling</span>
+                        <span class="tag">Group Facilitation</span>
+                        <span class="tag">Motivational Interviewing</span>
+                        <span class="tag">Trauma-Informed Practice</span>
+                        <span class="tag">Risk Assessment</span>
+                        <span class="tag">Treatment Planning</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h4>Education & School-Based</h4>
+                    <div class="skill-tags">
+                        <span class="tag">SEL (Social Emotional Learning)</span>
+                        <span class="tag">Safeguarding Awareness</span>
+                        <span class="tag">IEP Collaboration</span>
+                        <span class="tag">ADHD/ASD Support</span>
+                        <span class="tag">Behavior Intervention Plans</span>
+                        <span class="tag">Social Skills Training</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h4>Professional Skills</h4>
+                    <div class="skill-tags">
+                        <span class="tag">Multidisciplinary Collaboration</span>
+                        <span class="tag">Cross-Cultural Counseling</span>
+                        <span class="tag">Family Consultation</span>
+                        <span class="tag">Case Management</span>
+                        <span class="tag">Data-Driven Practice</span>
+                        <span class="tag">Statistical Analysis (SPSS/JASP)</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h4>Specialized Experience</h4>
+                    <div class="skill-tags">
+                        <span class="tag">Geriatric Mental Health</span>
+                        <span class="tag">Behavioral Health Outreach</span>
+                        <span class="tag">South Asian Communities</span>
+                        <span class="tag">Youth Mental Health</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-icon">🌏</span>
+                <h2 class="section-title">Languages</h2>
+            </div>
+            <div class="lang-grid">
+                <div class="lang-item">
+                    <div class="lang-name">English</div>
+                    <div class="lang-level">Fluent</div>
+                    <div class="lang-note">IELTS 8.0</div>
+                </div>
+                <div class="lang-item">
+                    <div class="lang-name">Mandarin</div>
+                    <div class="lang-level">Native</div>
+                    <div class="lang-note">Mainland families</div>
+                </div>
+                <div class="lang-item">
+                    <div class="lang-name">Cantonese</div>
+                    <div class="lang-level">Native</div>
+                    <div class="lang-note">Local community</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-icon">📜</span>
+                <h2 class="section-title">Certifications & Development</h2>
+            </div>
+            <div class="cert-list">
+                <div class="cert-item">
+                    <span class="cert-status progress">In Progress</span>
+                    <span>Hong Kong Psychological Society (HKPS) - Associate Member Application</span>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-status progress">In Progress</span>
+                    <span>SEL (Social Emotional Learning) Specialization - Vanderbilt University</span>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-status progress">Planned</span>
+                    <span>Safeguarding & Child Protection Certificate (2025)</span>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-status done">Completed</span>
+                    <span>IELTS Band 8.0</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Zhenhao He · Last updated January 2025</p>
+            <p style="margin-top: 8px;">
+                <a href="mailto:ethan.he@gmail.com">ethan.he@gmail.com</a> ·
+                <a href="tel:+85268221557">+852 6822 1557</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
