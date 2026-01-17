@@ -207,14 +207,26 @@
         }
 
         .btn-primary {
-            background: var(--accent);
-            color: white;
+            background: white;
+            color: var(--accent);
+            border: 2px solid var(--accent);
         }
 
         .btn-primary:hover {
-            background: #134a3a;
+            background: var(--accent);
             color: white;
             opacity: 1;
+        }
+
+        /* Hero button override - keep green background */
+        .hero .btn-primary {
+            background: var(--accent);
+            color: white;
+            border: none;
+        }
+
+        .hero .btn-primary:hover {
+            background: #134a3a;
         }
 
         .btn-secondary {
