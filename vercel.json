@@ -1,0 +1,15 @@
+{
+  "public": true,
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/HK",
+      "destination": "/HK/index.html"
+    },
+    {
+      "source": "/HK/:path*",
+      "destination": "/HK/:path*"
+    }
+  ]
+}
